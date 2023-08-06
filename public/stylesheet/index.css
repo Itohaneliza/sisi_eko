@@ -1,0 +1,143 @@
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'poppins' sans-serif;
+    
+}
+.bigcontain {
+    background: url("/public/images/istockphoto-517495506-612x612.jpg") no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+.bigcontain::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.4) transparent;
+}
+nav{
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 12;
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu .logo h1 {
+    text-decoration: none;
+    font-size: 90px;
+    font-weight: 600;
+    color:transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* -webkit-text-stroke: 1px white; */
+    background-image: linear-gradient( #ec4899,  #ec4899);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -400px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor{
+    100% {
+        background-position: 0 0 ;
+    }
+}
+.menu ul {
+    display: inline-flex;
+}
+.menu ul li {
+    list-style: none;
+    margin-left: 7px;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding:8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color:#3b82f6;
+}
+.menu ul li a:hover {
+    background-color:#f0abfc ;
+    color:#c084fc ;
+
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #38bdf8; */
+    padding: 0, 20px;
+    text-align: center;
+    width: 100%;
+}
+.center .title{
+    font-size: 120px;
+    font-weight: 500;
+     color:transparent;
+     -webkit-text-stroke: 1px white;
+     background: url(/public/images/back.png);
+     -webkit-background-clip: text;
+     background-position: 0 0;
+     animation: back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.center .subtitle {
+    font-size: 45px; 
+    font-weight: 400;
+    color:#f43f5e ;
+}
+.center .btns {
+    margin-top: 20px;
+    justify-content: space-between;
+    
+}
+.center .btns button {
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    margin: 0, 10px;
+    border: 2px solid#dbeafe ;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0, 10px;
+    cursor: pointer;
+    outline: none;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    align-items: stretch;
+}
+.center .btns button:hover{
+    background-color:#ddd6fe ;
+    color: #e11d48;
+}
+.social {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.social img {
+    width: 25px;
+    display: block;
+    margin: 25px 5px ;
+}
